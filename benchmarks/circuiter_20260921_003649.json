@@ -1,0 +1,290 @@
+{
+  "submitted": {
+    "tenant-a": 153,
+    "tenant-b": 147,
+    "tenant-c": 149
+  },
+  "units": {
+    "tenant-a": 60.0,
+    "tenant-b": 40.0,
+    "tenant-c": 20.0
+  },
+  "ratios": {
+    "a/b": 1.5,
+    "a/c": 3.0
+  },
+  "violations": [],
+  "peak_mean_sm": 0.5,
+  "history": [
+    {
+      "t": 0,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 2,
+        "tenant-b": 5,
+        "tenant-c": 4
+      }
+    },
+    {
+      "t": 1,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 4,
+        "tenant-b": 10,
+        "tenant-c": 9
+      }
+    },
+    {
+      "t": 2,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 8,
+        "tenant-b": 13,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 3,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 16,
+        "tenant-c": 17
+      }
+    },
+    {
+      "t": 4,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 12,
+        "tenant-b": 21,
+        "tenant-c": 21
+      }
+    },
+    {
+      "t": 5,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 14,
+        "tenant-b": 23,
+        "tenant-c": 25
+      }
+    },
+    {
+      "t": 6,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 17,
+        "tenant-b": 25,
+        "tenant-c": 28
+      }
+    },
+    {
+      "t": 7,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 20,
+        "tenant-b": 28,
+        "tenant-c": 32
+      }
+    },
+    {
+      "t": 8,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 23,
+        "tenant-b": 31,
+        "tenant-c": 37
+      }
+    },
+    {
+      "t": 9,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 25,
+        "tenant-b": 35,
+        "tenant-c": 40
+      }
+    },
+    {
+      "t": 10,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 27,
+        "tenant-b": 38,
+        "tenant-c": 44
+      }
+    },
+    {
+      "t": 11,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 31,
+        "tenant-b": 40,
+        "tenant-c": 49
+      }
+    },
+    {
+      "t": 12,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 34,
+        "tenant-b": 44,
+        "tenant-c": 54
+      }
+    },
+    {
+      "t": 13,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 36,
+        "tenant-b": 46,
+        "tenant-c": 59
+      }
+    },
+    {
+      "t": 14,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 37,
+        "tenant-b": 48,
+        "tenant-c": 65
+      }
+    },
+    {
+      "t": 15,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 39,
+        "tenant-b": 50,
+        "tenant-c": 68
+      }
+    },
+    {
+      "t": 16,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 40,
+        "tenant-b": 54,
+        "tenant-c": 73
+      }
+    },
+    {
+      "t": 17,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 42,
+        "tenant-b": 56,
+        "tenant-c": 78
+      }
+    },
+    {
+      "t": 18,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 45,
+        "tenant-b": 59,
+        "tenant-c": 82
+      }
+    },
+    {
+      "t": 19,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 47,
+        "tenant-b": 61,
+        "tenant-c": 86
+      }
+    },
+    {
+      "t": 20,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 48,
+        "tenant-b": 64,
+        "tenant-c": 90
+      }
+    },
+    {
+      "t": 21,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 51,
+        "tenant-b": 67,
+        "tenant-c": 94
+      }
+    },
+    {
+      "t": 22,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 54,
+        "tenant-b": 69,
+        "tenant-c": 99
+      }
+    },
+    {
+      "t": 23,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 57,
+        "tenant-b": 72,
+        "tenant-c": 103
+      }
+    },
+    {
+      "t": 24,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 59,
+        "tenant-b": 76,
+        "tenant-c": 107
+      }
+    },
+    {
+      "t": 25,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 62,
+        "tenant-b": 80,
+        "tenant-c": 110
+      }
+    },
+    {
+      "t": 26,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 65,
+        "tenant-b": 84,
+        "tenant-c": 113
+      }
+    },
+    {
+      "t": 27,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 67,
+        "tenant-b": 88,
+        "tenant-c": 117
+      }
+    },
+    {
+      "t": 28,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 71,
+        "tenant-b": 92,
+        "tenant-c": 120
+      }
+    },
+    {
+      "t": 29,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 75,
+        "tenant-b": 94,
+        "tenant-c": 123
+      }
+    }
+  ]
+}

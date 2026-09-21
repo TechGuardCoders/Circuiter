@@ -1,0 +1,554 @@
+{
+  "submitted": {
+    "tenant-a": 85,
+    "tenant-b": 62,
+    "tenant-c": 39
+  },
+  "units": {
+    "tenant-a": 60.0,
+    "tenant-b": 40.0,
+    "tenant-c": 20.0
+  },
+  "ratios": {
+    "a/b": 1.5,
+    "a/c": 3.0
+  },
+  "violations": [
+    "limit: tenant-b asked 1.5581469909164365GB, had 0.34321191909776694GB free",
+    "limit: tenant-b asked 1.0720256762157387GB, had 0.34321191909776694GB free",
+    "limit: tenant-b asked 1.2162386119330346GB, had 0.34321191909776694GB free",
+    "limit: tenant-b asked 2.8977909862605458GB, had 0.34321191909776694GB free",
+    "limit: tenant-c asked 1.6276610398321834GB, had 0.23799704774010877GB free",
+    "limit: tenant-c asked 2.793319282855203GB, had 0.23799704774010877GB free",
+    "limit: tenant-c asked 1.9208192656918095GB, had 0.23799704774010877GB free",
+    "limit: tenant-a asked 2.2685808199690465GB, had 1.8103163607203552GB free",
+    "limit: tenant-a asked 2.872871805743677GB, had 1.8103163607203552GB free",
+    "limit: tenant-b asked 2.2315958826125133GB, had 0.41430578422091635GB free",
+    "limit: tenant-b asked 1.120161021255446GB, had 0.41430578422091635GB free",
+    "limit: tenant-b asked 1.9325008593934156GB, had 0.41430578422091635GB free",
+    "limit: tenant-c asked 2.2177278355799652GB, had 1.3235751064190282GB free",
+    "limit: tenant-c asked 1.9790057394233713GB, had 1.3235751064190282GB free",
+    "limit: tenant-c asked 2.909682075321977GB, had 1.3235751064190282GB free",
+    "limit: tenant-c asked 1.738329652713571GB, had 1.3235751064190282GB free",
+    "limit: tenant-c asked 1.597272598634241GB, had 1.3235751064190282GB free",
+    "limit: tenant-a asked 2.5445468248882417GB, had 2.236107609494818GB free",
+    "limit: tenant-b asked 1.5387562697931405GB, had 1.2654129789913622GB free",
+    "limit: tenant-b asked 2.3561272238974915GB, had 1.2654129789913622GB free",
+    "limit: tenant-b asked 2.898298134412671GB, had 0.07136819376236936GB free",
+    "limit: tenant-c asked 2.3004647525849897GB, had 0.7552861986499124GB free",
+    "limit: tenant-c asked 1.902204368570445GB, had 0.7552861986499124GB free",
+    "limit: tenant-b asked 2.61251568227011GB, had 1.9436919270172286GB free",
+    "limit: tenant-b asked 2.58772384896833GB, had 0.6843136514250148GB free",
+    "limit: tenant-b asked 1.692708561333707GB, had 0.6843136514250148GB free",
+    "limit: tenant-c asked 2.1366645158756095GB, had 0.7552861986499124GB free",
+    "limit: tenant-c asked 1.8265312635302224GB, had 0.7552861986499124GB free",
+    "limit: tenant-c asked 1.9547050586829755GB, had 0.7552861986499124GB free",
+    "limit: tenant-c asked 2.245320960684324GB, had 0.7552861986499124GB free",
+    "limit: tenant-c asked 2.117742999645489GB, had 0.7552861986499124GB free",
+    "limit: tenant-a asked 2.038029953291507GB, had 0.20910502712077772GB free",
+    "limit: tenant-a asked 1.682137428070666GB, had 0.20910502712077772GB free",
+    "limit: tenant-a asked 1.1361352482137246GB, had 0.20910502712077772GB free",
+    "limit: tenant-a asked 1.5740223544835494GB, had 0.20910502712077772GB free",
+    "limit: tenant-b asked 2.767120330030841GB, had 0.9632140239258398GB free",
+    "limit: tenant-b asked 1.0987137110999896GB, had 0.9632140239258398GB free",
+    "limit: tenant-c asked 2.3257922086096565GB, had 1.6011420488642258GB free",
+    "limit: tenant-c asked 1.8275008954591545GB, had 1.6011420488642258GB free",
+    "limit: tenant-c asked 2.224327819251825GB, had 1.6011420488642258GB free",
+    "limit: tenant-a asked 1.4416063457330117GB, had 1.2038562134739443GB free",
+    "limit: tenant-a asked 2.7752752276779837GB, had 1.2038562134739443GB free",
+    "limit: tenant-a asked 1.4789131997774827GB, had 1.2038562134739443GB free",
+    "limit: tenant-b asked 1.099863704390659GB, had 1.0375538347247897GB free",
+    "limit: tenant-b asked 1.5371722224069997GB, had 1.0375538347247897GB free",
+    "limit: tenant-c asked 2.550491036874999GB, had 0.20269134972643066GB free",
+    "limit: tenant-c asked 1.0996666113796336GB, had 0.20269134972643066GB free",
+    "limit: tenant-c asked 1.0660221853025098GB, had 0.20269134972643066GB free",
+    "limit: tenant-a asked 1.7216691712279686GB, had 0.25931324816330203GB free",
+    "limit: tenant-a asked 1.657552606295044GB, had 0.25931324816330203GB free",
+    "limit: tenant-a asked 2.111051887325777GB, had 0.25931324816330203GB free",
+    "limit: tenant-b asked 2.3005423662457143GB, had 0.21893649939759108GB free",
+    "limit: tenant-b asked 2.2733528435403243GB, had 0.21893649939759108GB free",
+    "limit: tenant-b asked 2.773073992603922GB, had 0.21893649939759108GB free",
+    "limit: tenant-c asked 1.841027795527712GB, had 0.9316632120179253GB free",
+    "limit: tenant-c asked 1.9216798248577884GB, had 0.9316632120179253GB free",
+    "limit: tenant-c asked 2.0716747681810075GB, had 0.9316632120179253GB free",
+    "limit: tenant-c asked 1.1431619942655762GB, had 0.9316632120179253GB free",
+    "limit: tenant-c asked 1.8517101128453892GB, had 0.9316632120179253GB free",
+    "limit: tenant-a asked 2.5818337927811017GB, had 1.1794676311687748GB free",
+    "limit: tenant-a asked 1.9282864286088255GB, had 1.1794676311687748GB free",
+    "limit: tenant-a asked 2.626443411879651GB, had 1.1794676311687748GB free",
+    "limit: tenant-a asked 2.7746870000687176GB, had 1.1794676311687748GB free",
+    "limit: tenant-b asked 2.4331640154853655GB, had 0.06235281519803948GB free",
+    "limit: tenant-b asked 1.4719405587658885GB, had 0.06235281519803948GB free",
+    "limit: tenant-b asked 2.05441278356014GB, had 0.06235281519803948GB free",
+    "limit: tenant-b asked 2.3184139114688023GB, had 0.06235281519803948GB free",
+    "limit: tenant-c asked 1.9638422405150822GB, had 1.0071524184285234GB free",
+    "limit: tenant-c asked 1.568989643142766GB, had 1.0071524184285234GB free",
+    "limit: tenant-a asked 2.8691246890026267GB, had 0.650742571996993GB free",
+    "limit: tenant-b asked 2.291945759206505GB, had 0.6962281590564317GB free",
+    "limit: tenant-b asked 2.400226723455538GB, had 0.6962281590564317GB free",
+    "limit: tenant-b asked 1.505792071930637GB, had 0.6962281590564317GB free",
+    "limit: tenant-c asked 1.7506491914437652GB, had 1.3215090321434193GB free",
+    "limit: tenant-c asked 2.8589789630894566GB, had 1.3215090321434193GB free",
+    "limit: tenant-c asked 2.9341824972722006GB, had 1.3215090321434193GB free",
+    "limit: tenant-c asked 2.1368098222630625GB, had 1.3215090321434193GB free",
+    "limit: tenant-a asked 1.802103875538726GB, had 1.4040246176567681GB free",
+    "limit: tenant-a asked 1.9670024650784488GB, had 0.07885786925434068GB free",
+    "limit: tenant-a asked 2.901384032414161GB, had 0.07885786925434068GB free",
+    "limit: tenant-a asked 2.716210472376809GB, had 0.07885786925434068GB free",
+    "limit: tenant-b asked 2.8695783798740084GB, had 2.597183981207767GB free",
+    "limit: tenant-b asked 2.342770050545533GB, had 0.5211150739256301GB free",
+    "limit: tenant-c asked 1.5343470407934356GB, had 1.2774459468779344GB free",
+    "limit: tenant-c asked 1.765500205764535GB, had 0.23119643402530166GB free",
+    "limit: tenant-c asked 1.7209407126728495GB, had 0.23119643402530166GB free",
+    "limit: tenant-c asked 2.5484091023177244GB, had 0.23119643402530166GB free",
+    "limit: tenant-a asked 2.7132978878551017GB, had 1.822464331735512GB free",
+    "limit: tenant-a asked 2.4671768826522085GB, had 1.822464331735512GB free",
+    "limit: tenant-b asked 2.2964997249497228GB, had 0.028996657128709913GB free",
+    "limit: tenant-b asked 1.1385285997199222GB, had 0.028996657128709913GB free",
+    "limit: tenant-b asked 1.508344847591099GB, had 0.028996657128709913GB free",
+    "limit: tenant-b asked 2.5516017415914387GB, had 0.028996657128709913GB free",
+    "limit: tenant-c asked 2.4094686310759634GB, had 1.801111357997712GB free",
+    "limit: tenant-c asked 2.7995199998285845GB, had 1.801111357997712GB free",
+    "limit: tenant-c asked 2.730197877362701GB, had 1.801111357997712GB free",
+    "limit: tenant-c asked 1.846590579911442GB, had 1.801111357997712GB free",
+    "limit: tenant-c asked 2.667858286406861GB, had 0.6292605259233159GB free",
+    "limit: tenant-a asked 1.155932593496088GB, had 0.5045139554335982GB free",
+    "limit: tenant-a asked 2.4847384982606364GB, had 0.5045139554335982GB free",
+    "limit: tenant-b asked 1.225058010793019GB, had 1.0623541797586622GB free",
+    "limit: tenant-b asked 2.8175240047414354GB, had 1.0623541797586622GB free",
+    "limit: tenant-c asked 2.5146466560723146GB, had 1.101747954483347GB free",
+    "limit: tenant-c asked 2.351774389594296GB, had 1.101747954483347GB free",
+    "limit: tenant-c asked 2.6121100011073097GB, had 1.101747954483347GB free",
+    "limit: tenant-c asked 2.508379384047525GB, had 1.101747954483347GB free",
+    "limit: tenant-c asked 2.3456501002020733GB, had 1.101747954483347GB free",
+    "limit: tenant-a asked 1.1190462964489059GB, had 0.9917591943215047GB free",
+    "limit: tenant-a asked 2.4557879502533586GB, had 0.9917591943215047GB free",
+    "limit: tenant-a asked 2.2916687674174874GB, had 0.9917591943215047GB free",
+    "limit: tenant-b asked 2.3107426234221125GB, had 1.9613597597088148GB free",
+    "limit: tenant-b asked 2.863688164350112GB, had 1.9613597597088148GB free",
+    "limit: tenant-c asked 1.3738058724657274GB, had 0.3463445613483138GB free",
+    "limit: tenant-c asked 2.5644228782710616GB, had 0.3463445613483138GB free",
+    "limit: tenant-c asked 1.2148418682193076GB, had 0.3463445613483138GB free",
+    "limit: tenant-c asked 2.107460342990385GB, had 0.3463445613483138GB free",
+    "limit: tenant-c asked 1.7837085032347193GB, had 0.3463445613483138GB free",
+    "limit: tenant-a asked 1.8066777206693896GB, had 0.5454244964837347GB free",
+    "limit: tenant-b asked 1.1992974084836514GB, had 1.044777580022533GB free",
+    "limit: tenant-b asked 2.557966126649773GB, had 1.044777580022533GB free",
+    "limit: tenant-c asked 2.396346974211477GB, had 0.3463445613483138GB free",
+    "limit: tenant-c asked 2.3402983508008335GB, had 0.3463445613483138GB free",
+    "limit: tenant-c asked 2.966819893549389GB, had 0.3463445613483138GB free",
+    "limit: tenant-c asked 2.21578811327325GB, had 0.3463445613483138GB free",
+    "limit: tenant-a asked 1.739199664915546GB, had 0.38255344963769566GB free",
+    "limit: tenant-a asked 2.684594330238647GB, had 0.38255344963769566GB free",
+    "limit: tenant-b asked 2.1052128062570663GB, had 1.4273335270634018GB free",
+    "limit: tenant-b asked 2.2672838046821484GB, had 1.4273335270634018GB free",
+    "limit: tenant-b asked 2.3732602701625636GB, had 1.4273335270634018GB free",
+    "limit: tenant-b asked 2.72002158563795GB, had 1.4273335270634018GB free",
+    "limit: tenant-c asked 1.2149654890664887GB, had 0.8422354183732601GB free",
+    "limit: tenant-c asked 1.4675919933896144GB, had 0.8422354183732601GB free",
+    "limit: tenant-c asked 2.250040135689578GB, had 0.8422354183732601GB free",
+    "limit: tenant-c asked 2.5643037934533943GB, had 0.8422354183732601GB free",
+    "limit: tenant-c asked 2.625445552176938GB, had 0.8422354183732601GB free",
+    "limit: tenant-a asked 2.8470574177892054GB, had 1.45183888673394GB free",
+    "limit: tenant-a asked 2.236685607335177GB, had 1.45183888673394GB free",
+    "limit: tenant-b asked 2.389319430193563GB, had 1.5968592168270686GB free",
+    "limit: tenant-b asked 2.7165824299915675GB, had 1.5968592168270686GB free",
+    "limit: tenant-b asked 2.8539515142733505GB, had 1.5968592168270686GB free",
+    "limit: tenant-c asked 2.9882731786905654GB, had 2.1808038834861296GB free",
+    "limit: tenant-c asked 1.3999573653493034GB, had 0.7706378146380573GB free",
+    "limit: tenant-c asked 1.4417788607627415GB, had 0.7706378146380573GB free",
+    "limit: tenant-c asked 2.573776007334911GB, had 0.7706378146380573GB free",
+    "limit: tenant-c asked 2.6905063122556023GB, had 0.7706378146380573GB free",
+    "limit: tenant-a asked 1.9288106181857223GB, had 0.3251400829711635GB free",
+    "limit: tenant-a asked 1.8029156690593413GB, had 0.3251400829711635GB free",
+    "limit: tenant-b asked 1.7419463760814873GB, had 0.45058557895099227GB free",
+    "limit: tenant-b asked 2.192948362258214GB, had 0.45058557895099227GB free",
+    "limit: tenant-b asked 1.0054011017709015GB, had 0.45058557895099227GB free",
+    "limit: tenant-c asked 1.3905990743501917GB, had 0.8273266545472335GB free",
+    "limit: tenant-c asked 1.3415278283436398GB, had 0.8273266545472335GB free",
+    "limit: tenant-c asked 1.3365516310441161GB, had 0.8273266545472335GB free",
+    "limit: tenant-c asked 1.2201387078863586GB, had 0.8273266545472335GB free",
+    "limit: tenant-a asked 1.4784839511409882GB, had 0.18416875519201348GB free",
+    "limit: tenant-a asked 1.986482084194767GB, had 0.18416875519201348GB free",
+    "limit: tenant-b asked 2.1888292439563752GB, had 1.2517266260954951GB free",
+    "limit: tenant-c asked 1.9308078108618425GB, had 0.3790946965694104GB free",
+    "limit: tenant-c asked 1.6010963095511466GB, had 0.3790946965694104GB free",
+    "limit: tenant-c asked 1.5316283111291114GB, had 0.3790946965694104GB free",
+    "limit: tenant-c asked 2.258207932007303GB, had 0.3790946965694104GB free",
+    "limit: tenant-a asked 1.0381494636883428GB, had 0.9692156566629606GB free",
+    "limit: tenant-b asked 2.947694417199649GB, had 0.9814732043524117GB free",
+    "limit: tenant-b asked 2.607177383879349GB, had 0.9814732043524117GB free",
+    "limit: tenant-b asked 2.8801796832476034GB, had 0.9814732043524117GB free",
+    "limit: tenant-c asked 1.7887110425200978GB, had 0.5149866317223601GB free",
+    "limit: tenant-c asked 1.3682211615131141GB, had 0.5149866317223601GB free",
+    "limit: tenant-c asked 2.0149569122472912GB, had 0.5149866317223601GB free",
+    "limit: tenant-c asked 2.0730330002315007GB, had 0.5149866317223601GB free",
+    "limit: tenant-a asked 2.1066730970030485GB, had 1.8224161529841663GB free",
+    "limit: tenant-a asked 1.4588096357059341GB, had 0.09676524937639819GB free",
+    "limit: tenant-b asked 2.0141005325411117GB, had 0.6493534578658959GB free",
+    "limit: tenant-b asked 2.830116476276918GB, had 0.6493534578658959GB free",
+    "limit: tenant-b asked 2.898912109242587GB, had 0.6493534578658959GB free",
+    "limit: tenant-b asked 1.3433516876503415GB, had 0.6493534578658959GB free",
+    "limit: tenant-c asked 2.321202354089728GB, had 1.3232975726077871GB free",
+    "limit: tenant-c asked 2.201369432265385GB, had 1.3232975726077871GB free",
+    "limit: tenant-c asked 1.0963577099130202GB, had 0.21041281451481986GB free",
+    "limit: tenant-a asked 1.676940643323876GB, had 0.4702744596685893GB free",
+    "limit: tenant-a asked 1.900653586996929GB, had 0.4702744596685893GB free",
+    "limit: tenant-a asked 1.4207977390391675GB, had 0.4702744596685893GB free",
+    "limit: tenant-b asked 2.9706355037042154GB, had 1.1472841559392037GB free",
+    "limit: tenant-b asked 1.5750041450150125GB, had 1.1472841559392037GB free",
+    "limit: tenant-b asked 2.701506950891769GB, had 1.1472841559392037GB free",
+    "limit: tenant-c asked 2.5622963593483012GB, had 0.21041281451481986GB free",
+    "limit: tenant-c asked 2.5772823822928626GB, had 0.21041281451481986GB free",
+    "limit: tenant-c asked 1.3763198475164897GB, had 0.21041281451481986GB free",
+    "limit: tenant-c asked 1.1582561588483764GB, had 0.21041281451481986GB free",
+    "limit: tenant-c asked 1.225064256759741GB, had 0.21041281451481986GB free",
+    "limit: tenant-c asked 2.9328304693312077GB, had 0.21041281451481986GB free",
+    "limit: tenant-a asked 2.2308428154713384GB, had 2.226580413622644GB free",
+    "limit: tenant-a asked 2.522803093023729GB, had 2.226580413622644GB free",
+    "limit: tenant-b asked 2.8901448785423662GB, had 2.7145708537910664GB free",
+    "limit: tenant-b asked 1.0151099035765843GB, had 0.9557578420555739GB free",
+    "limit: tenant-b asked 2.2853153657501712GB, had 0.9557578420555739GB free",
+    "limit: tenant-c asked 1.9690825753450945GB, had 1.8933806835810518GB free",
+    "limit: tenant-c asked 2.1054049236528045GB, had 1.8933806835810518GB free",
+    "limit: tenant-c asked 2.211738609056071GB, had 0.04767739788531067GB free",
+    "limit: tenant-a asked 1.5018815132660674GB, had 0.6277638009878448GB free",
+    "limit: tenant-a asked 2.49907237188419GB, had 0.6277638009878448GB free",
+    "limit: tenant-a asked 1.437468824903984GB, had 0.6277638009878448GB free",
+    "limit: tenant-b asked 2.0714332290376083GB, had 0.8092314838584915GB free",
+    "limit: tenant-b asked 2.89610821293509GB, had 0.8092314838584915GB free",
+    "limit: tenant-b asked 2.8992081941555847GB, had 0.8092314838584915GB free",
+    "limit: tenant-b asked 2.546916752801293GB, had 0.8092314838584915GB free",
+    "limit: tenant-b asked 2.9946037469442466GB, had 0.8092314838584915GB free",
+    "limit: tenant-c asked 2.914962216231158GB, had 1.0986122914329535GB free",
+    "limit: tenant-c asked 2.784858377216269GB, had 1.0986122914329535GB free",
+    "limit: tenant-c asked 1.3013712658628434GB, had 1.0986122914329535GB free",
+    "limit: tenant-c asked 1.122732797849942GB, had 1.0986122914329535GB free",
+    "limit: tenant-c asked 1.3896300903735312GB, had 1.0986122914329535GB free",
+    "limit: tenant-a asked 2.4841781138887673GB, had 1.055185121024369GB free",
+    "limit: tenant-a asked 1.5746062121235918GB, had 1.055185121024369GB free",
+    "limit: tenant-a asked 1.5986667410801214GB, had 1.055185121024369GB free",
+    "limit: tenant-a asked 1.1551152647377194GB, had 1.055185121024369GB free",
+    "limit: tenant-b asked 2.8856325322590126GB, had 0.7141346086145344GB free",
+    "limit: tenant-b asked 2.8800218174331444GB, had 0.7141346086145344GB free",
+    "limit: tenant-b asked 2.9971535733651207GB, had 0.7141346086145344GB free",
+    "limit: tenant-b asked 2.9130623020633153GB, had 0.7141346086145344GB free",
+    "limit: tenant-c asked 2.6142760340999707GB, had 1.2855736598257774GB free",
+    "limit: tenant-c asked 1.4852065135557977GB, had 1.2855736598257774GB free",
+    "limit: tenant-a asked 2.9673490341007307GB, had 1.8834772772965422GB free",
+    "limit: tenant-a asked 1.725646078277166GB, had 0.1736880163832648GB free",
+    "limit: tenant-a asked 1.9803612259781258GB, had 0.1736880163832648GB free",
+    "limit: tenant-b asked 1.1876352645459582GB, had 0.6113094848142495GB free",
+    "limit: tenant-b asked 1.494465510129544GB, had 0.6113094848142495GB free",
+    "limit: tenant-b asked 1.83643725101491GB, had 0.6113094848142495GB free",
+    "limit: tenant-c asked 2.9919399272684224GB, had 1.9140489405386756GB free",
+    "limit: tenant-c asked 2.522759181388694GB, had 1.9140489405386756GB free",
+    "limit: tenant-c asked 2.907057972783825GB, had 1.9140489405386756GB free",
+    "limit: tenant-a asked 1.3374758816564416GB, had 0.07114523233470038GB free",
+    "limit: tenant-a asked 2.286186517185352GB, had 0.07114523233470038GB free",
+    "limit: tenant-a asked 2.8123225638281926GB, had 0.07114523233470038GB free",
+    "limit: tenant-b asked 2.5093052227589387GB, had 1.8436084154943924GB free",
+    "limit: tenant-b asked 2.954922133723613GB, had 1.8436084154943924GB free",
+    "limit: tenant-b asked 1.5874898013912049GB, had 0.10149898985414474GB free",
+    "limit: tenant-b asked 1.279134169103401GB, had 0.10149898985414474GB free",
+    "limit: tenant-b asked 1.203133425237918GB, had 0.10149898985414474GB free",
+    "limit: tenant-c asked 1.9050321472143685GB, had 1.0505150560976464GB free",
+    "limit: tenant-c asked 1.310609796303837GB, had 1.0505150560976464GB free",
+    "limit: tenant-c asked 2.0439968412780507GB, had 1.0505150560976464GB free",
+    "limit: tenant-c asked 2.702135462023374GB, had 1.0505150560976464GB free",
+    "limit: tenant-a asked 1.975174428898468GB, had 0.44583627561748074GB free",
+    "limit: tenant-a asked 2.418791648056363GB, had 0.44583627561748074GB free",
+    "limit: tenant-a asked 1.2049149488685502GB, had 0.44583627561748074GB free",
+    "limit: tenant-a asked 1.7426049118287967GB, had 0.44583627561748074GB free",
+    "limit: tenant-b asked 2.8830509011175725GB, had 0.4226953096746122GB free",
+    "limit: tenant-b asked 1.0985983203483756GB, had 0.4226953096746122GB free",
+    "limit: tenant-b asked 1.075770272967276GB, had 0.4226953096746122GB free",
+    "limit: tenant-b asked 2.221130704768524GB, had 0.4226953096746122GB free",
+    "limit: tenant-c asked 2.9603421077038163GB, had 0.9593366940351569GB free",
+    "limit: tenant-c asked 1.459504067253895GB, had 0.9593366940351569GB free",
+    "limit: tenant-c asked 1.1590640350906563GB, had 0.9593366940351569GB free",
+    "limit: tenant-a asked 2.677254599598182GB, had 1.3188661840068772GB free",
+    "limit: tenant-a asked 2.8842584234803255GB, had 1.3188661840068772GB free",
+    "limit: tenant-a asked 2.3841069202032594GB, had 1.3188661840068772GB free",
+    "limit: tenant-a asked 2.9679575932449516GB, had 1.3188661840068772GB free",
+    "limit: tenant-a asked 1.578804694803486GB, had 1.3188661840068772GB free",
+    "limit: tenant-b asked 2.349194949829681GB, had 0.8677776997971858GB free",
+    "limit: tenant-c asked 1.783579573848492GB, had 0.9593366940351569GB free",
+    "limit: tenant-c asked 2.253210934641243GB, had 0.9593366940351569GB free",
+    "limit: tenant-c asked 2.29729461405714GB, had 0.9593366940351569GB free",
+    "limit: tenant-c asked 1.2934905744910223GB, had 0.9593366940351569GB free"
+  ],
+  "peak_mean_sm": 0.5,
+  "history": [
+    {
+      "t": 0,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 2,
+        "tenant-b": 5,
+        "tenant-c": 4
+      }
+    },
+    {
+      "t": 1,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 4,
+        "tenant-b": 10,
+        "tenant-c": 9
+      }
+    },
+    {
+      "t": 2,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 8,
+        "tenant-b": 9,
+        "tenant-c": 10
+      }
+    },
+    {
+      "t": 3,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 9,
+        "tenant-b": 9,
+        "tenant-c": 9
+      }
+    },
+    {
+      "t": 4,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 9,
+        "tenant-b": 11,
+        "tenant-c": 11
+      }
+    },
+    {
+      "t": 5,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 10,
+        "tenant-c": 10
+      }
+    },
+    {
+      "t": 6,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 10,
+        "tenant-c": 10
+      }
+    },
+    {
+      "t": 7,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 9,
+        "tenant-b": 11,
+        "tenant-c": 11
+      }
+    },
+    {
+      "t": 8,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 11,
+        "tenant-c": 11
+      }
+    },
+    {
+      "t": 9,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 9,
+        "tenant-b": 11,
+        "tenant-c": 12
+      }
+    },
+    {
+      "t": 10,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 11,
+        "tenant-c": 12
+      }
+    },
+    {
+      "t": 11,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 8,
+        "tenant-b": 11,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 12,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 10,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 13,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 11,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 14,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 9,
+        "tenant-b": 11,
+        "tenant-c": 14
+      }
+    },
+    {
+      "t": 15,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 11,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 16,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 10,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 17,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 11,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 18,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 10,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 19,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 11,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 20,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 12,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 21,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 11,
+        "tenant-c": 15
+      }
+    },
+    {
+      "t": 22,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 12,
+        "tenant-b": 10,
+        "tenant-c": 14
+      }
+    },
+    {
+      "t": 23,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 12,
+        "tenant-b": 11,
+        "tenant-c": 14
+      }
+    },
+    {
+      "t": 24,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 12,
+        "tenant-b": 10,
+        "tenant-c": 13
+      }
+    },
+    {
+      "t": 25,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 10,
+        "tenant-c": 14
+      }
+    },
+    {
+      "t": 26,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 11,
+        "tenant-b": 11,
+        "tenant-c": 14
+      }
+    },
+    {
+      "t": 27,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 10,
+        "tenant-c": 14
+      }
+    },
+    {
+      "t": 28,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 10,
+        "tenant-b": 10,
+        "tenant-c": 15
+      }
+    },
+    {
+      "t": 29,
+      "mean_sm": 0.5,
+      "queues": {
+        "tenant-a": 7,
+        "tenant-b": 11,
+        "tenant-c": 14
+      }
+    }
+  ]
+}
