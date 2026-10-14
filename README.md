@@ -53,3 +53,17 @@ uv venv --python 3.11 .venv && uv pip install pytest
 ## What's next
 
 Per-slice cost attribution feeds Cost Peep: cost per slice per tenant, the FinOps layer over shared silicon.
+
+## Fleet mode (multi-node)
+
+`Fleet` routes tenant work across a pool of nodes, each an independent `Cluster` of slices. Per-node health (liveness + free memory + SM load); new work goes to the healthiest node with capacity, a marked-down node is skipped, and routing failures are recorded — never silently dropped. Single-`Cluster` usage is unchanged.
+
+```python
+from circuiter import Cluster, Fleet, Node, Tenant
+
+fleet = Fleet([Node(id="n1", cluster=Cluster([Tenant(id="a")])),
+               Node(id="n2", cluster=Cluster([Tenant(id="a")]))])
+node = fleet.route("a", mem_gb=2.0, sm_demand=0.5)  # healthiest node with capacity
+fleet.mark_down("n1")                                # failover: n2 takes over
+fleet.tick_all()                                     # advance healthy nodes only
+```

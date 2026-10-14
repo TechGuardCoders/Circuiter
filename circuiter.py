@@ -148,6 +148,87 @@ class Cluster:
         return {"mean_sm": total_sm}
 
 
+# ---------------------------------------------------------------- fleet
+#
+# Fleet mode: multiple compute nodes, each an independent Cluster of slices.
+# Each node reports health (mean SM utilization + liveness); new work routes
+# to the healthiest node with capacity. A node that fails (or is marked down)
+# stops receiving work; its in-flight work is lost, not silently dropped —
+# callers get a routing failure they can retry elsewhere.
+
+
+@dataclass
+class Node:
+    id: str
+    cluster: Cluster
+    healthy: bool = True
+
+    @property
+    def load(self) -> float:
+        """Mean SM utilization across this node's slices (0..1)."""
+        return statistics.mean([s.sm_busy for s in self.cluster.slices] or [0.0])
+
+    @property
+    def free_mem_gb(self) -> float:
+        return sum(SLICE_MEM_GB - s.mem_used_gb for s in self.cluster.slices)
+
+
+class Fleet:
+    """Route tenant work across a pool of nodes, healthiest first.
+
+    Selection: among healthy nodes, prefer the one with the most free memory,
+    tie-broken by lowest SM load. Unhealthy nodes are skipped entirely.
+    """
+
+    def __init__(self, nodes: list[Node]):
+        if not nodes:
+            raise ValueError("fleet needs at least one node")
+        self.nodes = {n.id: n for n in nodes}
+        self.routing_failures: list[str] = []
+
+    def mark_down(self, node_id: str) -> None:
+        self.nodes[node_id].healthy = False
+
+    def mark_up(self, node_id: str) -> None:
+        self.nodes[node_id].healthy = True
+
+    def health(self) -> dict[str, dict]:
+        return {nid: {"healthy": n.healthy, "load": round(n.load, 3),
+                      "free_mem_gb": round(n.free_mem_gb, 1)}
+                for nid, n in self.nodes.items()}
+
+    def _pick(self, mem_gb: float) -> Node | None:
+        candidates = [n for n in self.nodes.values()
+                      if n.healthy and n.free_mem_gb >= mem_gb]
+        if not candidates:
+            return None
+        return max(candidates, key=lambda n: (n.free_mem_gb, -n.load))
+
+    def route(self, tenant_id: str, mem_gb: float, sm_demand: float) -> Node | None:
+        """Submit work to the healthiest node with capacity. Returns the node
+        it landed on, or None (and records a routing failure) if no healthy
+        node can take it."""
+        node = self._pick(mem_gb)
+        if node is None:
+            self.routing_failures.append(
+                f"route: {tenant_id} asked {mem_gb}GB, no healthy node with capacity")
+            return None
+        if not node.cluster.submit(tenant_id, mem_gb=mem_gb, sm_demand=sm_demand):
+            # node-level limit violation: tenant over its cap there
+            self.routing_failures.append(
+                f"route: {tenant_id} rejected by {node.id} (limit)")
+            return None
+        return node
+
+    def tick_all(self) -> dict[str, dict]:
+        """Tick every healthy node; unhealthy nodes are not advanced."""
+        out = {}
+        for nid, n in self.nodes.items():
+            if n.healthy:
+                out[nid] = n.cluster.tick()
+        return out
+
+
 def contention_drill(tenants: list[Tenant], ticks: int = 30, seed: int = 3) -> dict:
     """All tenants slam the cluster simultaneously. Fairness = throughput
     proportional to weight, bounded by max_slices."""
