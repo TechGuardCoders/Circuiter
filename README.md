@@ -90,3 +90,13 @@ fleet.mark_down("n1");                   // failover: n2 takes over
 ```bash
 cargo test   # Rust port
 ```
+
+## Docker
+
+Multi-stage, multi-arch (amd64 + arm64), non-root runtime image.
+
+```bash
+docker build --target test .          # run the test suite in-container
+docker build -t circuiter .           # runtime image (smoke import)
+docker run --rm circuiter
+```
