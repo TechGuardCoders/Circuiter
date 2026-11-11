@@ -1,0 +1,10 @@
+[package]
+name = "circuiter"
+version = "0.1.0"
+edition = "2021"
+description = "GPU partitioning lab: slice leasing, per-slice memory limits, weighted-fair scheduling, healthiest-node fleet routing."
+license = "MIT"
+
+[lib]
+name = "circuiter"
+path = "src/lib.rs"

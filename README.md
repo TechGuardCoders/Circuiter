@@ -67,3 +67,26 @@ node = fleet.route("a", mem_gb=2.0, sm_demand=0.5)  # healthiest node with capac
 fleet.mark_down("n1")                                # failover: n2 takes over
 fleet.tick_all()                                     # advance healthy nodes only
 ```
+
+## Rust implementation
+
+`src/lib.rs` is a 1:1 port of the Python reference (same semantics, same
+test suite — 12 tests in `cargo test`). Zero dependencies. Two API
+translations: `Fleet::route` returns the node id (`Option<String>`) instead
+of a node reference, and an empty fleet is a `Result` error instead of a
+raise. Python stays as the reference implementation.
+
+```rust
+use circuiter::{Cluster, Fleet, Node, Tenant};
+
+let mut fleet = Fleet::new(vec![
+    Node::new("n1", Cluster::new(vec![Tenant::new("a")])),
+    Node::new("n2", Cluster::new(vec![Tenant::new("a")])),
+])?;
+let landed = fleet.route("a", 2.0, 0.5); // healthiest node with capacity
+fleet.mark_down("n1");                   // failover: n2 takes over
+```
+
+```bash
+cargo test   # Rust port
+```
